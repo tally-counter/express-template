@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><%= title_page %></title>
+	<link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+<body>
+	<%- include("navbar") %>
+	<main>
+        <%- content %>
+    </main>
+    <%- include("footer") %>
+    <script src="/javascripts/scripts.js"></script>
+</body>
+</html>
