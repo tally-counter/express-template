@@ -26,7 +26,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/", require("./routes/home"));
+app.use("/home", require("./routes/home"));
+app.all("/", (req, res) => res.redirect("/home"));
+app.all("*", (req, res) => res.redirect("/home/404"));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

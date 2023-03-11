@@ -7,4 +7,9 @@ router.get("/", function(req, res, next) {
   res.render("home/index", context);
 });
 
+router.get("/404", function(req, res, next) {
+  const context = req.context;
+  res.render("home/404", context);
+});
+
 module.exports = router;
