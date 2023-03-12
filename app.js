@@ -19,7 +19,7 @@ app.engine("ejs", require("express-ejs-extend"));
 
 app.use((req, res, next) => {
   const context = {
-    title_page: "ExpressJS"
+    title_page: "ExpressJS Template"
   }
 
   req.context = context;
